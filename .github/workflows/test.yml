@@ -16,7 +16,4 @@ jobs:
           input-file: test/example.pkl
           output-folder: test/output
       - run: |
-          ls test/output
-          ls test/output/generated
-          ls test/output/generated/kotlin
-          cat test/output/generated/kotlin/Example.kt
+          cat test/output/kotlin/Example.kt
