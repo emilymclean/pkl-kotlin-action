@@ -54,8 +54,11 @@ jobs:
           replace: "${{ needs.version.outputs.latest-version }}"
           regex: false
       - uses: stefanzweifel/git-auto-commit-action@v5
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          ref: "develop"
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6
         with:
           branch: "update-pkl/feature/${{ needs.version.outputs.latest-version }}-pkl-lang"
-          base: "develop"
