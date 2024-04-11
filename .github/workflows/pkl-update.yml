@@ -18,7 +18,7 @@ jobs:
           ref: "develop"
       - name: Get current Pkl version
         run: |
-          VER=$(cat VERSION)
+          VER=$(cat .pkl-version)
           echo "PKL_VERSION=$VER" >> $GITHUB_ENV
       - id: pkl-release
         uses: pozetroninc/github-action-get-latest-release@master
