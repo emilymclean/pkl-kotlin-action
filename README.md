@@ -1,6 +1,6 @@
 # PklKotlin Action
 
-Generates Kotlin source code for a Pkl model. Based on version 0.25.3 of the Pkl tool/lang.
+Generates Kotlin source code for a Pkl model. Based on version 0.26.3 of the Pkl tool/lang.
 
 ## Inputs
 
