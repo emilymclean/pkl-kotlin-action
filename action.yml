@@ -23,7 +23,7 @@ runs:
             input_files+=("/data/$(echo "$file" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')")
         done
 
-        docker run --rm -v "./:/data" ghcr.io/emilymclean/pkl-codegen-java:${{ inputs.pkl-version }}-1 "${input_files[@]}" -o "/data/${{ inputs.output-folder }}"
+        docker run --rm -v "./:/data" ghcr.io/emilymclean/pkl-codegen-kotlin:${{ inputs.pkl-version }}-1 "${input_files[@]}" -o "/data/${{ inputs.output-folder }}"
       shell: bash
 branding:
   icon: 'cpu'
