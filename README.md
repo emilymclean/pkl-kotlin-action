@@ -8,7 +8,7 @@ Generates Kotlin source code for a Pkl model.
 |--------------------	|----------	|-------------------------------------------------------------------------------------------------------------------	|----------	|
 | `input-file`       	| ✅        	| The pkl file(s) to process, separated by commas.                                                                    |           |
 | `output-folder` 	  | ✅       	| Where the resulting binding will be written to.                                                        	            |    	      |
-| `pkl-version`      	|          	| The pkl version to use       	                                                                                      | 0.31.0    |
+| `pkl-version`      	|          	| The pkl version to use       	                                                                                      | 0.31.1    |
 
 ## Example usage
 ```
